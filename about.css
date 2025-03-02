@@ -83,6 +83,15 @@
     .menu-button {
         display: inline-block;
     }
+
+    .ms-auto {
+        margin-left: auto;
+    }
+
+    .btn.btn-dark {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
 
 
@@ -225,20 +234,20 @@ h1.others {
 
 /* Text box */
 .container.for_About {
-    width: 100%; /* Ensures the container spans the full width */
-    text-align: center; /* Centers the text box horizontally */
-    margin-top: 20px; /* Adds some space from the top */
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; 
 }
 
 .rounded-text-box {
     width: 900px;
     padding: 20px;
-    border: none; /* Removes the border */
+    border: none;
     border-radius: 15px;
-    background-color: #ffb6c1; /* Light pink background */
+    background-color: #ffb6c1;
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #333;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    display: inline-block; /* Allows the box to be centered with text-align */
+    display: inline-block;
 }

@@ -83,6 +83,15 @@
     .menu-button {
         display: inline-block;
     }
+
+    .ms-auto {
+        margin-left: auto;
+    }
+
+    .btn.btn-dark {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
 }
 
 
