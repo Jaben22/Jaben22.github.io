@@ -1,0 +1,386 @@
+.navbar-custom {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+    background-color: #ffb6c1;
+    background-image: url("images/cookie-bg-left.png"), url("images/cookie-bg-right.png");
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+    font-family: "Titan One", sans-serif;
+}
+
+#navbarToggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#menuText {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sliding-panel {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffb6c1;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-top: 60px;
+    font-family: "Titan One", sans-serif;
+}
+
+.sliding-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sliding-panel ul li {
+    padding: 15px 20px;
+}
+
+.sliding-panel ul li:hover {
+    background-color: #ff89a3;
+}
+
+.sliding-panel ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+/* Overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+}
+
+@media (max-width: 768px) {
+    .menu-text {
+        display: none;
+    }
+
+    .menu-button {
+        display: inline-block;
+    }
+}
+
+
+@media (min-width: 769px) {
+    .menu-text {
+        display: inline-block;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
+
+.text-center {
+    font-family: "Titan One", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 80px;
+    color: #000000;
+    margin-top: -45px;
+
+
+}
+
+/* Footer */
+footer {
+    background-color: #ffb6c1;
+    padding: 40px 0;
+    border-top: 1px solid #e9ecef;
+    margin-top: 100px;
+}
+
+footer h4 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer ul li a:hover {
+    color: #F16478;
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #e9ecef;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.social-icons a:hover {
+    color: #F16478;
+}
+
+.footer-bottom {
+    background-color: #e9ecef;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Gallery */
+.container.for_gallery {
+    padding-top: 50px;
+}
+
+/* Gallery Styles */
+
+.gallery {
+    display: grid;
+    /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 20px;
+    /* Space between grid cells */
+}
+
+.gallery_item {
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    background-color: #fff;
+    /* Background for the cell */
+    overflow: hidden;
+    /* Ensure the image stays within the cell */
+}
+
+.gallery_item img {
+    width: 100%;
+    /* Image will fill the width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px 10px 0 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery_item:hover img {
+    opacity: 0.7;
+    /* Opacity on hover */
+}
+
+.desc {
+    padding: 10px;
+    font-size: 14px;
+    /* Adjust the font size of the caption */
+    color: #333;
+}
+
+/* Lightbox Styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ff6f61;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+/* Navigation Buttons For Lightbox */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 16px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+/* New Arrivals */
+.container.for_newarrivals {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h2 {
+    font-family: "Titan One", sans-serif;
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Dropdown Styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    /* Adjust the width of the dropdown container */
+    margin-right: 20px;
+}
+
+.dropdown:last-child {
+    margin-right: 0;
+}
+
+.dropdown img {
+    width: 100%;
+    /* Image will fill the width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.dropdown:hover img {
+    opacity: 0.9;
+    /* Slight opacity change on hover */
+    transform: scale(1.02);
+    /* Slight zoom effect on hover */
+}
+
+.dropdown-content {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    /* Position below the main image */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    /* Ensure dropdown appears above other elements */
+    padding: 15px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-content img {
+    width: 100%;
+    /* Image will fill the width of its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.dropdown-content .desc {
+    padding: 10px;
+    font-size: 14px;
+    /* Adjust the font size of the caption */
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    /* Show dropdown on hover */
+    opacity: 1;
+    /* Fade in */
+    transform: translateY(0);
+    /* Slide down */
+}

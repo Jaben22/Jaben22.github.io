@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Doughy Goodness!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+    <link href="gallery.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid d-flex justify-content-around align-items-center">
+            <!-- Left: Menu -->
+            <div class="me-auto">
+                <button id="navbarToggle" class="menu-button d-lg-none d-flex">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <a href="#" id="menuText" class="nav-link fw-lighter d-none d-lg-flex align-items-center">
+                    <span class="fas fa-bars me-2"></span> Menu
+                </a>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="text-center mx-auto">
+                <a class="navbar-brand" href="home1.html">The Doughy Goodness</a>
+            </div>
+
+            <!-- Right: Order Now Button -->
+            <div class="ms-auto">
+                <a class="btn btn-dark" href="order.html">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sliding Panel -->
+    <div class="sliding-panel" id="slidingPanel">
+        <ul><br><br>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+	
+	<div class="container for_gallery">
+	<h2>Cookie Flavors!</h2>
+        <div class="gallery">
+            <div class="gallery_item">
+                <a target="_blank" href="images/Campfire.jpg">
+                    <img src="images/Campfire.jpg" alt="Campfire Cookie" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Campfire Cookie</strong></div>
+            </div>
+
+            <div class="gallery_item">
+                <a target="_blank" href="images/Cookie5.png">
+                    <img src="images/Cookie5.png" alt="Blacksmore Cookie" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Blacksmore Cookie</strong></div>
+            </div>
+
+            <div class="gallery_item">
+                <a target="_blank" href="images/Original.jpg">
+                    <img src="images/Original.jpg" alt="Classic Chocolate Chip Cookie" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Classic Chocolate Chip Cookie</strong></div>
+            </div>
+
+            <div class="gallery_item">
+                <a target="_blank" href="images/Cookie2.png">
+                    <img src="images/Cookie2.png" alt="Biscoff Cookie" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Biscoff Cookie</strong></div>
+            </div>
+
+			<div class="gallery_item">
+                <a target="_blank" href="images/CookieMonster.png">
+                    <img src="images/CookieMonster.png" alt="Cookie Monster" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Cookie Monster</strong></div>
+            </div>
+
+			<div class="gallery_item">
+                <a target="_blank" href="images/RedVelvet.jpg">
+                    <img src="images/RedVelvet.jpg" alt="Red Velvet" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Red Velvet</strong></div>
+            </div>
+
+			<div class="gallery_item">
+                <a target="_blank" href="images/Matcha.jpg">
+                    <img src="images/Matcha.jpg" alt="Matcha White Chocolate Cream Cheese" width="600" height="400">
+                </a>
+                <div class="desc"><strong>Matcha White Chocolate Cream Cheese</strong></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="caption"></div>
+    </div>
+	
+	<div class="container for_newarrivals">
+        <h2>New Arrivals</h2>
+        <div class="dropdown">
+            <img src="images/Cake.jpg" alt="Custom Cake" width="600" height="400">
+            <div class="dropdown-content">
+                <img src="images/Cake.jpg" alt="Custom Cake" width="600" height="400">
+                <div class="desc">Order a Customized Cake!</div>
+            </div>
+        </div>
+		<div class="dropdown">
+            <img src="images/Valentines.jpg" alt="Valentines Cookie" width="600" height="400">
+            <div class="dropdown-content">
+                <img src="images/Valentines.jpg" alt="Valentines Cookie" width="600" height="400">
+                <div class="desc">Check Out Our Valentines Themed Cookie!</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+	<footer>
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Cainta Rizal, Philippines</p>
+                    <p><i class="fas fa-phone"></i> (0917) 673 0814</p>
+                    <p><i class="fas fa-envelope"></i> thedoughygoodness@gmail.com</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="order.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1A34Kxou8a/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/thedoughygoodness?igsh=ODhjOWI4b3hsa2V6" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_thedoughygoodness?_t=ZS-8uISps1QqnP&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 The Doughy Goodness. All rights reserved. </br>Cutchon, David Joshua. Dimalaluan, Alfons Niemrad. Soliman, Robin. </br> Velasco, Calvin Kristian. Vida, John Benedict</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>

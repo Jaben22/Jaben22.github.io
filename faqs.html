@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Doughy Goodness!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+    <link href="faqs.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid d-flex justify-content-around align-items-center">
+            <!-- Left: Menu -->
+            <div class="me-auto">
+                <button id="navbarToggle" class="menu-button d-lg-none d-flex">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <a href="#" id="menuText" class="nav-link fw-lighter d-none d-lg-flex align-items-center">
+                    <span class="fas fa-bars me-2"></span> Menu
+                </a>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="text-center mx-auto">
+                <a class="navbar-brand" href="home1.html">The Doughy Goodness</a>
+            </div>
+
+            <!-- Right: Order Now Button -->
+            <div class="ms-auto">
+                <a class="btn btn-dark" href="order.html">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sliding Panel -->
+    <div class="sliding-panel" id="slidingPanel">
+        <ul><br><br>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+
+<div class="container mt-5">
+    <div class="faq-container">
+        <h2 class="faq-title mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+
+            <!-- FAQ Item 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        🍪 What are your products?
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We offer a wide variety of pastries, including cookies, brownies, cakes, mochi bites, and many other delicious treats. 
+                        Additionally, we provide custom pastry options tailored to your preferences, whether it's a specific flavor, design, or 
+                        dietary requirement. Let us create the perfect pastry just for you!
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        💳 Do you only accept cash?
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        At The Doughy Goodness, we accept multiple payment methods for your convenience, including cash, GCash, PayMaya, 
+                        as well as credit and debit cards. We strive to make your purchase experience smooth and hassle-free, ensuring you have 
+                        flexible payment options to suit your preference.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        🕒 When are you open?
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        We are open Monday to Friday from 9:00 AM to 8:00 PM to serve you. Whether you're craving a sweet treat or 
+                        looking to place a custom order, feel free to visit us during our business hours. We look forward to delighting you with 
+                        our freshly baked pastries!
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        📞 Contact and Support
+                    </button>
+                </h2>
+                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        If you have any questions or encounter any issues, feel free to reach out to us. You can contact us via email at 
+                        <strong>thedoughygoodness@gmail.com</strong> or call our landline at <strong>(0917) 673 0814</strong>. Our team is happy to assist you with 
+                        any inquiries, orders, or concerns to ensure you have the best experience with The Doughy Goodness.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+	<footer>
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Cainta Rizal, Philippines</p>
+                    <p><i class="fas fa-phone"></i> (0917) 673 0814</p>
+                    <p><i class="fas fa-envelope"></i> thedoughygoodness@gmail.com</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="order.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1A34Kxou8a/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/thedoughygoodness?igsh=ODhjOWI4b3hsa2V6" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_thedoughygoodness?_t=ZS-8uISps1QqnP&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 The Doughy Goodness. All rights reserved. </br>Cutchon, David Joshua. Dimalaluan, Alfons Niemrad. Soliman, Robin. </br> Velasco, Calvin Kristian. Vida, John Benedict</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="home1.js"></script>
+
+</body>
+
+</html>

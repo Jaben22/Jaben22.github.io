@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Doughy Goodness!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--GOOGLE FONT-->
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+    <link href="home1.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid d-flex justify-content-around align-items-center">
+            <!-- Left: Menu -->
+            <div class="me-auto">
+                <button id="navbarToggle" class="menu-button d-lg-none d-flex">
+                    <span class="fas fa-bars"></span>
+                </button>
+                <a href="#" id="menuText" class="nav-link fw-lighter d-none d-lg-flex align-items-center">
+                    <span class="fas fa-bars me-2"></span> Menu
+                </a>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="text-center mx-auto">
+                <a class="navbar-brand" href="home1.html">The Doughy Goodness</a>
+            </div>
+
+            <!-- Right: Order Now Button -->
+            <div class="ms-auto">
+                <a class="btn btn-dark" href="order.html">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sliding Panel -->
+    <div class="sliding-panel" id="slidingPanel">
+        <ul><br><br>
+            <li><a href="home1.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <!-- Video Background -->
+    <video autoplay muted loop id="myVideo">
+        <source src="cookie_clips.mp4" type="video/mp4">
+    </video>
+
+    <div class="container d-flex flex-column align-items-center justify-content-center w-100">
+
+        <div>
+            <h1 class="text-header">Cookie Flavors</h1>
+        </div>
+
+        <div class="cookie-container">
+            <!-- COOKIE 1 -->
+            <div class="card custom-card d-flex flex-row align-items-center">
+                <img src="images/classic_cookie.png" class="image-container image-left img-fluid"
+                    alt="Delicious Choco Chip Cookie" usemap="#cookieMap">
+                <map name="cookieMap">
+                    <area shape="circle" coords="1899,1740,3636" href="learn.html" alt="Learn More">
+                </map>
+                <div class="card-body-left">
+                    <h2 class="fw-bold">Delicious Choco Chip Cookie</h2>
+                    <p>Crowd's favorite - Classic chocolate chip cookie that is generously packed with 
+                        both dark and semi-sweet chocolate chip that gives just the right amount of sweetness.</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE 2 -->
+            <div class="card custom-card d-flex flex-row align-items-center flex-row-reverse">
+                <img src="images/cookie_biscoff.png" class="image-container image-right img-fluid"
+                    alt="Lotus Biscoff Cookie" usemap="#cookieMap2">
+                <map name="cookieMap2">
+                    <area shape="circle" coords="1899,1740,3636" href="learn2.html" alt="Learn More">
+                </map>
+                <div class="card-body-right">
+                    <h2 class="fw-bold">Lotus Biscoff<span style="font-size: 0.6em; vertical-align: super;">&reg;</span> Cookie</h2>
+                    <p>A classic cookie dough flavored in Biscoff spread with bits and pieces of Lotus Biscoff 
+                        cookie and topped with generous amount of another mouthwatering Biscoff spread and 
+                        a piece of Lotus Biscoff cookie.</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn2.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE 3 -->
+            <div class="card custom-card d-flex flex-row align-items-center">
+                <img src="images/cookie_campfire.png" class="image-container image-left img-fluid" alt="Campfire"
+                    usemap="#cookieMap3">
+                <map name="cookieMap3">
+                    <area shape="circle" coords="1899,1740,3636" href="learn3.html" alt="Learn More">
+                </map>
+                <div class="card-body-left">
+                    <h2 class="fw-bold">Campfire Cookie</h2>
+                    <p>A graham cracker cookie sandwiched in a classic chocolate cookie dough with a 
+                        surprise marshmallow inside and topped with another marshmallow, graham cracker 
+                        and Cadbury milk chocolate. This will keep you asking "some more!"</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn3.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE 4 -->
+            <div class="card custom-card d-flex flex-row align-items-center flex-row-reverse">
+                <img src="images/monster_cookie.png" class="image-container image-right img-fluid" alt="Monster Cookie"
+                    usemap="#cookieMap4">
+                <map name="cookieMap4">
+                    <area shape="circle" coords="1899,1740,3636" href="learn4.html" alt="Learn More">
+                </map>
+                <div class="card-body-right">
+                    <h2 class="fw-bold">Monster Cookie</h2>
+                    <p>Kid's most wanted, a blue cookie with all their favorite bits packed in one 
+                        single dough - Oreo, chocolate chip cookie, white and chocolate chips!</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn4.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE 5 -->
+            <div class="card custom-card d-flex flex-row align-items-center">
+                <img src="images/cookie_red.png" class="image-container image-left img-fluid" alt="Red Velvet Cookie"
+                    usemap="#cookieMap5">
+                <map name="cookieMap5">
+                    <area shape="circle" coords="1899,1740,3636" href="learn5.html" alt="Learn More">
+                </map>
+                <div class="card-body-left">
+                    <h2 class="fw-bold">Red Velvet Cookie</h2>
+                    <p>A crowd's most favorite, not your ordinary red velvet cookies. This is packed 
+                        with bits of Orea cookies, white and semi-sweet chocolate chips and filled with 
+                        a generous, burst-in-your-mouth amount of cream cheese inside.</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn5.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE 6 -->
+            <div class="card custom-card d-flex flex-row align-items-center flex-row-reverse">
+                <img src="images/cookie_matcha.png" class="image-container image-right img-fluid"
+                    alt="Matcha White Chocolate Creem Cheese" usemap="#cookieMap6">
+                <map name="cookieMap6">
+                    <area shape="circle" coords="1899,1740,3636" href="learn6.html" alt="Learn More">
+                </map>
+                <div class="card-body-right">
+                    <h2 class="fw-bold">Matcha White Chocolate Cream Cheese</h2>
+                    <p>For the matcha lovers — a matcha cookie with white chocolate chips and 
+                        filled with a mouthwatering cream cheese inside.</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn6.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKIE 7 -->
+            <div class="card custom-card d-flex flex-row align-items-center">
+                <img src="images/cookie_black.png" class="image-container image-left img-fluid" alt="Blacksmore Cookie"
+                    usemap="#cookieMap7">
+                <map name="cookieMap7">
+                    <area shape="circle" coords="1899,1740,3636" href="learn7.html" alt="Learn More">
+                </map>
+                <div class="card-body-left">
+                    <h2 class="fw-bold">Blacksmore Cookie</h2>
+                    <p>New in town, our very own deep, dark chocolate cookie with a twist of campfire 
+                        luxuriously packed with Biscoff spread and marshmallow inside, topped with 
+                        another marshmallow and a Lotus Biscoff cookie.</p>
+                    <div class="d-flex justify-content-start flex-wrap gap-2">
+                        <a href="learn7.html" class="btn btn-custom-learn">Learn More</a>
+                        <a href="order.html" class="btn btn-custom-order">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Cainta Rizal, Philippines</p>
+                    <p><i class="fas fa-phone"></i> (0917) 673 0814</p>
+                    <p><i class="fas fa-envelope"></i> thedoughygoodness@gmail.com</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home1.html">Home</a></li>
+                        <li><a href="order.html">Our Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1A34Kxou8a/?mibextid=qi2Omg" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/thedoughygoodness?igsh=ODhjOWI4b3hsa2V6" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@_thedoughygoodness?_t=ZS-8uISps1QqnP&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 The Doughy Goodness. All rights reserved. </br>Cutchon, David Joshua. Dimalaluan, Alfons Niemrad. Soliman, Robin. </br> Velasco, Calvin Kristian. Vida, John Benedict</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="home1.js"></script>
+
+</body>
+
+</html>
